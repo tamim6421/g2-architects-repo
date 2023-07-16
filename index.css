@@ -22,6 +22,8 @@ nav>ul {
 
 .logo_title {
     padding: 50px;
+    color: red;
+    font-family: arial black;
 }
 
 ul li {
@@ -54,6 +56,7 @@ ul a {
     font-size: 4rem;
     font-weight: 500;
     margin-bottom: 10px;
+    color: tomato;
 }
 
 .banner_description {
@@ -114,6 +117,8 @@ main {
     font-size: 2.3rem;
     color: salmon;
     margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 
@@ -153,8 +158,10 @@ main {
 .b_cards {
     border-radius: 8px;
     background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
     text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
 }
 
 .badge{
@@ -176,14 +183,66 @@ main {
 
 
 
+.fact{
+    width: 90%;
+    margin: 70px auto;
+}
+.fact_title{
+    font-size:2rem;
+    font-family: arial black;
+    text-align: center;
+    color: tomato;
+    margin-bottom: 10px;
+}
+.banner_description{
+    text-align: center;
+}
+.fact_box h3{
+    font-size: 2rem;
+}
+.fact_box p{
+font-size: 1.2rem;
+margin-bottom: 10px;
+}
+.fact_box{
+    border: 1px solid salmon;
+    
+    text-align: center;
+    padding: 20px;
 
+}
+.fact_box_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.logo_div{
+    display: flex;
+    gap: 30px;
+    width: 90%;
+    margin: 90px 100px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.copy{
+    background-color: bisque;
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+    padding: 10px;
+    color: #736f6fdd;
+}
 
 
 /* responsive Style */
 @media screen and (max-width:576px) {
 
     nav,
-    .team_container,.features_container {
+    .team_container,.features_container,.fact_box_container {
         flex-direction: column;
     }
 
@@ -199,6 +258,19 @@ main {
         max-width: 200px;
         margin: auto;
     }
+    .fact_box_container{
+        gap: 20px;
+    }
+    .fact_box{
+        width: 80%;
+        margin: auto;
+    }
+    .logo_div{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
 }
 
 
@@ -221,9 +293,30 @@ main {
         width: 90%;
         margin: 10px auto;
     }
+    .featurs_image{
+        width: 90%;
+        margin: auto;
+    }
+    /* .featurs_image img{
+        width: 80%;
+        margin: auto;
+    } */
     .badge{
         max-width: 200px;
         position: static;
         margin: auto;
+    }
+    .fact_box_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        width: 90%;
+        margin:100px auto;
+    }
+    .logo_div{
+      display: grid;  
+      grid-template-columns:repeat(3,1fr);
+      width: 90%;
+      margin: auto;
     }
 }
